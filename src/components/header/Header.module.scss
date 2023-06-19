@@ -1,0 +1,54 @@
+.header {
+  background-color: black;
+  color: #ffffff;
+
+  .wrapper {
+    max-width: 1660px;
+    margin: 0 auto;
+    height: 80px;
+
+    .headerWrapper {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .logotype {
+        padding-top: 30px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        font-weight: 400;
+
+        li {
+          margin-right: 70px;
+          cursor: pointer;
+        }
+      }
+
+      .icon,
+      .signIn {
+        padding-top: 30px;
+      }
+
+      .signIn {
+        position: relative;
+        top: 12px;
+
+        font-size: 17px;
+        padding: 15px 35px;
+        background-color: #008968;
+        color: #FFFFFF;
+        border-radius: 25px;
+        transition: transform 0.3s;
+        letter-spacing: 1px;
+        border: none;
+      }
+    }
+  }
+}
