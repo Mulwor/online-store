@@ -1,15 +1,20 @@
 ### Stack: 
 
-React,
-React-router-dom
-Module.css with chackra-UI 
+1. React,
+
+2. React-router-dom
+
+3. Module.css with chackra-UI 
 
 
 ### Another thing: 
 
-Eslint => npx eslint --init
-Airbnb 
+1. Eslint => npx eslint --init
 
+2. Airbnb 
+
+
+Ctrl + Shift + P => reload window
 
 ### Макет:
 
