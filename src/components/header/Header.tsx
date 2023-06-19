@@ -1,7 +1,4 @@
-import React from "react"
-import { Box, Button, Flex, Text, Heading, Stack } from "@chakra-ui/react"
-
-const Header = () => {
+function Header() {
   return (
     <>
       <div>LOGISTICS X</div>
@@ -15,7 +12,7 @@ const Header = () => {
         </ul>
       </div>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

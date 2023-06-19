@@ -2,7 +2,13 @@
 
 React,
 React-router-dom
-Chackra-UI
+Module.css with chackra-UI 
+
+
+### Another thing: 
+
+Eslint => npx eslint --init
+Airbnb 
 
 
 ### Макет:
