@@ -1,11 +1,12 @@
 .header {
   background-color: black;
   color: #ffffff;
+  padding-bottom: 30px;
 
   .wrapper {
-    max-width: 1660px;
+    max-width: 1860px;
     margin: 0 auto;
-    height: 80px;
+    padding: 0 60px;
 
     .headerWrapper {
       display: flex;
@@ -29,17 +30,28 @@
           margin-right: 70px;
           cursor: pointer;
         }
+
+        li::first-line {
+          text-transform: uppercase;
+        }
       }
 
-      .icon,
-      .signIn {
+      .icons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .icon1, .icon2, .signIn {
         padding-top: 30px;
+      }
+
+      .icon2 {
+        padding-left: 40px;
       }
 
       .signIn {
         position: relative;
         top: 12px;
-
         font-size: 17px;
         padding: 15px 35px;
         background-color: #008968;

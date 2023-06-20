@@ -1,0 +1,219 @@
+.background {
+  background-image: url(/src/assets/background/logistics.png);
+  background-size: cover;
+  color: white;
+  padding-bottom: 7rem;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .top {
+      display: flex;
+      justify-content: flex;
+      flex-wrap: wrap;
+
+      .title {
+        padding-top: 250px;
+        font-size: 84px;
+      }
+
+      .title::first-line {
+        text-transform: uppercase;
+      }
+
+      .paragraph {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 600px;
+        font-size: 21px;
+        font-weight: 400;
+        text-align: justify;
+      }
+
+      .buttonLogistic {
+        width: 265px;
+        font-size: 17px;
+        padding: 15px 35px;
+        background-color: #008968;
+        color: #ffffff;
+        border-radius: 100px;
+        transition: transform 0.3s;
+        letter-spacing: 1px;
+        border: none;
+      }
+
+      .buttonDirectories {
+        margin-left: 20px;
+        width: 300px;
+        font-size: 17px;
+        padding: 15px 35px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 50px;
+        transition: transform 0.3s;
+        letter-spacing: 1px;
+        border: none;
+      }
+
+      .buttonLogistic::after,
+      .buttonDirectories::after {
+        content: '→';
+        padding-left: 10px;
+      }
+
+      .buttonLogistic:hover {
+        transition: 0.3s;
+        background-color: #049e7a;
+      }
+
+      .buttonDirectories:hover {
+        transition: 0.3s;
+        background-color: #050505d7;
+      }
+
+      .snicket {
+        padding-top: 7.5rem;
+      }
+    }
+  }
+}
+
+.background2 {
+  background-image: url(/src/assets/background/green.png);
+  background-size: cover;
+  color: white;
+  padding-bottom: 5rem;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .top {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .titleOrder {
+        padding-top: 250px;
+        font-size: 84px;
+      }
+
+      .titleOrder::first-line {
+        text-transform: uppercase;
+      }
+
+      .paragraph {
+        padding-top: 9px;
+        padding-bottom: 25px;
+        width: 500px;
+        font-size: 23px;
+      }
+
+      .block {
+        width: 700px;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(1.54379px);
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 30px;
+        border-radius: 30px;
+        text-align: justify;
+
+        h3 {
+          font-family: 'Arial';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 19.949px;
+          line-height: 29px;
+          /* or 144% */
+
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          padding-bottom: 9px;
+        }
+
+        p {
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18.1383px;
+          line-height: 24px;
+          color: #ffffff;
+          padding-bottom: 10px;
+        }
+      }
+      .certificate {
+        padding-top: 70px;
+      }
+    }
+  }
+}
+
+.background3 {
+  background-image: url(/src/assets/background/poizon.png);
+  background-color: #000000;
+  color: white;
+  padding-bottom: 7rem;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .top {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .one {
+        padding-top: 100px;
+
+        h2 {
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 63.5285px;
+          line-height: 76px;
+          text-align: center;
+        }
+
+        .add {
+          text-align: center;
+          color: #008968;
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28.7024px;
+          line-height: 34px;
+          padding-bottom: 60px;
+        }
+
+        .row {
+          display: flex;
+        }
+
+        .box {
+          padding-left: 30px;
+          width: 500px;
+
+          .paragraph {
+            text-align: justify;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17.3346px;
+            line-height: 21px;
+            color: #ffffff;
+            padding-left: 30px;
+            padding-bottom: 10px;
+            padding-top: 35px;
+          }
+        }
+      }
+    }
+  }
+}

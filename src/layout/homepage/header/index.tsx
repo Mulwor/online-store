@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './Header.module.scss';
 
-import Bell from '../../assets/svg/bell.svg';
-import Message from '../../assets/svg/message.svg';
+import Bell from '../../../assets/svg/bell.svg';
+import Message from '../../../assets/svg/message.svg';
 
 function Header() {
   return (
@@ -20,12 +20,14 @@ function Header() {
             </ul>
           </nav>
 
-          <img className={style.icon} src={Bell} alt="Колокол" />
-          <img className={style.icon} src={Message} alt="Сообщение" />
+          <div className={style.icons}>
+            <img className={style.icon1} src={Bell} alt="Колокол" />
+            <img className={style.icon2} src={Message} alt="Сообщение" />
+          </div>
 
-          <p>
+          <div>
             <button className={style.signIn}>Личный кабинет</button>
-          </p>
+          </div>
         </div>
       </div>
     </header>

@@ -4,7 +4,7 @@
 
 2. React-router-dom
 
-3. Module.css with chackra-UI 
+3. Module.css (sass) with chackra-UI 
 
 
 ### Another thing: 
