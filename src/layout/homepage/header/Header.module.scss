@@ -11,7 +11,6 @@
     .headerWrapper {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
       justify-content: space-between;
 
       .logotype {
@@ -22,7 +21,6 @@
 
       .navigation {
         display: flex;
-        flex-wrap: wrap;
         padding-top: 30px;
         font-weight: 400;
 
@@ -41,7 +39,9 @@
         justify-content: space-between;
       }
 
-      .icon1, .icon2, .signIn {
+      .icon1,
+      .icon2,
+      .signIn {
         padding-top: 30px;
       }
 
@@ -55,11 +55,39 @@
         font-size: 17px;
         padding: 15px 35px;
         background-color: #008968;
-        color: #FFFFFF;
+        color: #ffffff;
         border-radius: 25px;
         transition: transform 0.3s;
         letter-spacing: 1px;
         border: none;
+      }
+
+      @media screen and (max-width: 1210px) {
+        .headerWrapper {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .navigation {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .icons, .signIn {
+          display: none;
+        }
+      }
+      
+      // Бургер-меню 
+      @media screen and (max-width: 360px) {
+        .icons, .signIn {
+          display: none;
+        }
+
+        .logotype {
+          margin: 0 auto;
+        }
       }
     }
   }

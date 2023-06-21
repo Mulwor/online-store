@@ -11,12 +11,11 @@
 
     .top {
       display: flex;
-      justify-content: flex;
-      flex-wrap: wrap;
+      justify-content: space-between;
 
       .title {
         padding-top: 250px;
-        font-size: 84px;
+        font-size: 6rem;
       }
 
       .title::first-line {
@@ -76,9 +75,124 @@
       .snicket {
         padding-top: 7.5rem;
       }
+
+      @media screen and (max-width: 1210px) {
+        .title {
+          text-align: center;
+        }
+
+        .snicket {
+          padding-top: 5.5rem;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .title {
+          padding-top: 50px;
+          font-size: 70px;
+        }
+
+        .snicket {
+          width: 85%;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .title {
+          text-align: center;
+          font-size: 60px;
+        }
+
+        .paragraph {
+          padding-bottom: 2rem;
+        }
+
+        .snicket {
+          width: 100%;
+        }
+        
+        .title {
+          padding-top: 20px;
+          font-size: 30px;
+        }
+
+        .paragraph {
+          padding-top: 20px;
+          text-align: center;
+          width: 280px;
+          font-size: 10px;
+        }
+
+        .buttonLogistic,
+        .buttonDirectories {
+          margin-left: 28px;
+          font-size: 10px;
+          padding: 10px 35px;
+          border-radius: 70px;
+          width: 222px;
+          height: 35px;
+        }
+
+        .buttonDirectories {
+          padding: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        .title {
+          padding-top: 20px;
+          font-size: 30px;
+        }
+
+        .paragraph {
+          padding-top: 20px;
+          text-align: center;
+          width: 280px;
+          font-size: 10px;
+        }
+
+        .buttonLogistic,
+        .buttonDirectories {
+          margin-left: 28px;
+          font-size: 10px;
+          padding: 10px 35px;
+          border-radius: 70px;
+          width: 222px;
+          height: 35px;
+        }
+
+        .buttonDirectories {
+          padding: 10px;
+          margin-top: 10px;
+        }
+
+        .snicket {
+          position: relative;
+          bottom: 60px;
+          right: 23px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .background {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {}
+
 
 .background2 {
   background-image: url(/src/assets/background/green.png);
