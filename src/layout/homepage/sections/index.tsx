@@ -67,7 +67,7 @@ const Sections = () => {
               <h2>ЧТО ТАКОЕ POIZON?</h2>
               <p className={style.add}>СЕЙЧАС МЫ ВСЕ ОБЪЯСНИМ</p>
               <div className={style.row}>
-                <div>
+                <div className={style.forImg}>
                   <img className={style.poizon} src="/src/assets/photos/poizon.png" alt="Poizon" />
                 </div>
                 <div className={style.box}>

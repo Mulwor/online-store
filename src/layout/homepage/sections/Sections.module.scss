@@ -78,6 +78,8 @@
 
       @media screen and (max-width: 1210px) {
         .title {
+          padding-top: 125px;
+          font-size: 50px;
           text-align: center;
         }
 
@@ -98,44 +100,47 @@
       }
 
       @media screen and (max-width: 768px) {
-        .title {
-          text-align: center;
-          font-size: 60px;
-        }
-
         .paragraph {
           padding-bottom: 2rem;
         }
 
         .snicket {
-          width: 100%;
+          width: 75%;
         }
-        
+
         .title {
+          text-align: center;
           padding-top: 20px;
           font-size: 30px;
         }
 
         .paragraph {
           padding-top: 20px;
+          margin: 0 auto;
+          width: 350px;
+          font-size: 16px;
           text-align: center;
-          width: 280px;
-          font-size: 10px;
         }
 
         .buttonLogistic,
         .buttonDirectories {
-          margin-left: 28px;
+          margin: 0 auto;
+          // margin-left: 28px;
           font-size: 10px;
           padding: 10px 35px;
           border-radius: 70px;
-          width: 222px;
+          width: 200px;
           height: 35px;
         }
 
         .buttonDirectories {
           padding: 10px;
           margin-top: 10px;
+        }
+
+        .snicket {
+          margin-left: 40px;
+          padding-top: 20px;
         }
       }
 
@@ -168,9 +173,8 @@
         }
 
         .snicket {
-          position: relative;
-          bottom: 60px;
-          right: 23px;
+          margin-left: 10px;
+          padding-top: 25px;
         }
       }
     }
@@ -190,9 +194,6 @@
     padding-bottom: 3rem;
   }
 }
-
-@media screen and (max-width: 360px) {}
-
 
 .background2 {
   background-image: url(/src/assets/background/green.png);
@@ -264,7 +265,96 @@
       .certificate {
         padding-top: 70px;
       }
+
+      @media screen and (max-width: 1210px) {
+        .titleOrder {
+          text-align: center;
+          padding-top: 100px;
+          font-size: 50px;
+        }
+        .paragraph {
+          padding-top: 20px;
+          width: 700px;
+        }
+        .certificate {
+          padding-top: 0px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .titleOrder {
+          padding-top: 50px;
+          font-size: 30px;
+        }
+        .paragraph {
+          padding-top: 20px;
+          text-align: center;
+          font-size: 16px;
+        }
+        .certificate {
+          padding-top: 0px;
+        }
+
+        .block {
+          width: 700px;
+          height: 200px;
+
+          h3 {
+            font-size: 19px;
+          }
+
+          p {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            padding-bottom: 10px;
+          }
+        }
+      }
+      
+      @media screen and (max-width: 360px) {
+        .titleOrder {
+          padding-top: 20px;
+          font-size: 20px;
+        }
+
+        .paragraph {
+          padding-top: 20px;
+          text-align: center;
+          font-size: 12px;
+        }
+
+        .block {
+          padding-top: 20px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin: 0 auto;
+          width: 330px;
+          height: 180px;
+
+          h3 {
+            font-size: 11px;
+          }
+
+          p {
+            font-size: 9px;
+            line-height: 2;
+            color: #ffffff;
+            padding-bottom: 10px;
+          }
+        }
+
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .background2 {
+    padding-bottom: 0px;
   }
 }
 
@@ -307,8 +397,13 @@
           padding-bottom: 60px;
         }
 
+        .forImg {
+          margin: 0 auto;
+        }
+
         .row {
           display: flex;
+          flex-wrap: wrap;
         }
 
         .box {
@@ -327,7 +422,54 @@
             padding-top: 35px;
           }
         }
+
+        @media screen and (max-width: 1024px) {
+          .box {
+            .paragraph {
+              width: 700px;
+              padding-top: 13px;
+              padding-top: 15px;
+            }
+          }
+        }
+  
+        @media screen and (max-width: 768px) {
+          h2 {
+            padding-top: 0px;
+            font-size: 30px;
+          }
+
+          .add {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 16px;
+          }
+
+
+          .box {
+            padding-left: 0px;
+            .paragraph {
+              width: 40rem;
+              padding-top: 13px;
+              padding-top: 15px;
+            }
+          }
+        }
+        @media screen and (max-width: 360px) {
+          .poizon {
+            width: 80%;
+          }
+        }
       }
     }
   }
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  .background3 {
+    padding-bottom: 5rem;
+  }
+}
+
