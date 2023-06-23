@@ -4,17 +4,17 @@ import style from './Sections.module.scss';
 const Sections = () => {
   return (
     <>
-      <section className={style.background}>
+      <section className={style.logistic}>
         <div className={style.wrapper}>
-          <div className={style.top}>
+          <div className={style.blocks}>
             <div>
               <h1 className={style.title}>Logistics X</h1>
               <p className={style.paragraph}>
                 Закажем абсолютную любую позицию из Китая! Одежда, обувь, аксессуары, электроника и
                 многое другое! Цены значительно ниже, чем в России.
               </p>
-              <button className={style.buttonLogistic}>Перейти к каталогу</button>
-              <button className={style.buttonDirectories}>Перейти к калькулятору</button>
+              <button className={style.catalog}>Перейти к каталогу</button>
+              <button className={style.calculator}>Перейти к калькулятору</button>
             </div>
 
             <div>
@@ -28,11 +28,11 @@ const Sections = () => {
         </div>
       </section>
 
-      <section className={style.background2}>
+      <section className={style.order}>
         <div className={style.wrapper}>
-          <div className={style.top}>
+          <div className={style.blocks}>
             <div>
-              <h2 className={style.titleOrder}>что кладется в заказ?</h2>
+              <h2 className={style.title}>что кладется в заказ?</h2>
               <p className={style.paragraph}>
                 Мы решили как-то выделить наших клиентов на фоне остальных
               </p>
@@ -60,16 +60,19 @@ const Sections = () => {
         </div>
       </section>
 
-      <section className={style.background3}>
+      <section className={style.service}>
         <div className={style.wrapper}>
-          <div className={style.top}>
-            <div className={style.one}>
-              <h2>ЧТО ТАКОЕ POIZON?</h2>
-              <p className={style.add}>СЕЙЧАС МЫ ВСЕ ОБЪЯСНИМ</p>
+          <div className={style.block}>
+            <div className={style.indent}>
+              <h2 className={style.title}>ЧТО ТАКОЕ POIZON?</h2>
+
+              <p className={style.explanation}>СЕЙЧАС МЫ ВСЕ ОБЪЯСНИМ</p>
+
               <div className={style.row}>
-                <div className={style.forImg}>
+                <div className={style.img}>
                   <img className={style.poizon} src="/src/assets/photos/poizon.png" alt="Poizon" />
                 </div>
+
                 <div className={style.box}>
                   <p className={style.paragraph}>
                     В данном видеоролике мы подробно рассказываем о таких маркетплейсах, как Poizon,

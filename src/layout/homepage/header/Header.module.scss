@@ -8,7 +8,7 @@
     margin: 0 auto;
     padding: 0 60px;
 
-    .headerWrapper {
+    .block {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -19,7 +19,12 @@
         font-size: 20px;
       }
 
-      .navigation {
+      .logotype::after {
+        content: "X";
+        color: rgb(37, 182, 37);
+      }
+
+      .list {
         display: flex;
         padding-top: 30px;
         font-weight: 400;
@@ -39,17 +44,17 @@
         justify-content: space-between;
       }
 
-      .icon1,
-      .icon2,
-      .signIn {
+      .bell,
+      .message,
+      .account {
         padding-top: 30px;
       }
 
-      .icon2 {
+      .message {
         padding-left: 40px;
       }
 
-      .signIn {
+      .account {
         position: relative;
         top: 12px;
         font-size: 17px;
@@ -63,25 +68,25 @@
       }
 
       @media screen and (max-width: 1210px) {
-        .headerWrapper {
+        .block {
           display: flex;
           justify-content: space-between;
         }
 
-        .navigation {
+        .list {
           display: none;
         }
       }
 
       @media screen and (max-width: 768px) {
-        .icons, .signIn {
+        .icons, .account {
           display: none;
         }
       }
       
       // Бургер-меню 
       @media screen and (max-width: 360px) {
-        .icons, .signIn {
+        .icons, .account {
           display: none;
         }
 

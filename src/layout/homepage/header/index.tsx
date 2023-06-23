@@ -8,11 +8,11 @@ function Header() {
   return (
     <header className={style.header}>
       <div className={style.wrapper}>
-        <div className={style.headerWrapper}>
-          <div className={style.logotype}>LOGISTICS X</div>
+        <div className={style.block}>
+          <div className={style.logotype}>LOGISTICS </div>
 
-          <nav className={style.list}>
-            <ul className={style.navigation}>
+          <nav className={style.navigation}>
+            <ul className={style.list}>
               <li>Главная</li>
               <li>Каталог</li>
               <li>Оплата и доставки</li>
@@ -21,12 +21,12 @@ function Header() {
           </nav>
 
           <div className={style.icons}>
-            <img className={style.icon1} src={Bell} alt="Колокол" />
-            <img className={style.icon2} src={Message} alt="Сообщение" />
+            <img className={style.bell} src={Bell} alt="Колокол" />
+            <img className={style.message} src={Message} alt="Сообщение" />
           </div>
 
           <div>
-            <button className={style.signIn}>Личный кабинет</button>
+            <button className={style.account}>Личный кабинет</button>
           </div>
         </div>
       </div>
