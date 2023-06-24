@@ -225,7 +225,7 @@
 
       .block {
         max-width: 700px;
-        height: 250px;
+        //height: 250px;
         background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(1.54379px);
         padding-left: 60px;
@@ -484,6 +484,13 @@
           padding-top: 3.25em;
         }
       }
+
+      @media screen and (max-width: 360px) {
+        .indent {
+          padding-top: 0;
+        }
+      }
+      
     }
   }
 }
@@ -493,4 +500,3 @@
     padding-bottom: 5rem;
   }
 }
-

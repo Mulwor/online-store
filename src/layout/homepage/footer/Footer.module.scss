@@ -1,0 +1,16 @@
+.footer {
+  color: #000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .blocks {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
