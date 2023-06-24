@@ -31,8 +31,8 @@ const Sections = () => {
       <section className={style.order}>
         <div className={style.wrapper}>
           <div className={style.blocks}>
-            <div>
-              <h2 className={style.title}>что кладется в заказ?</h2>
+            <div className={style.row}>
+              <h2 className={style.title}>Что кладется в заказ?</h2>
               <p className={style.paragraph}>
                 Мы решили как-то выделить наших клиентов на фоне остальных
               </p>

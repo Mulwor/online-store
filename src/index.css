@@ -155,6 +155,7 @@ html {
 	padding: 0px;
 	margin: 0px;
 	border: none;
+  outline: 1px solid red;
 }
 
 *,
