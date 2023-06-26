@@ -1,7 +1,7 @@
 .footer {
-  color: #000000;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: black;
+  color: #ffffff;
+  padding-bottom: 1rem;
 
   .wrapper {
     max-width: 1860px;
@@ -10,7 +10,32 @@
 
     .blocks {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+
+      .block {
+        text-align: center;
+         //padding-bottom: 20px;
+        
+        .logotype {
+          padding-top: 20px;
+          cursor: pointer;
+          font-size: 25px;
+        }
+  
+        .logotype::after {
+          content: "X";
+          color: rgb(37, 182, 37);
+        }
+
+        .title {
+          font-size: 25px;
+          // padding-bottom: 20px;
+        }
+        .paragraph {
+          font-size: 20px;
+        }
+      }
     }
   }
 }
