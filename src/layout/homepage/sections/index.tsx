@@ -7,7 +7,7 @@ const Sections = () => {
       <section className={style.logistic}>
         <div className={style.wrapper}>
           <div className={style.blocks}>
-            <div>
+            <div className={style.block}>
               <h1 className={style.title}>Logistics X</h1>
               <p className={style.paragraph}>
                 Закажем абсолютную любую позицию из Китая! Одежда, обувь, аксессуары, электроника и

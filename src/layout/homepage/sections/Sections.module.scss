@@ -77,6 +77,9 @@
       }
 
       @media screen and (max-width: 1210px) {
+        .block {
+          margin: 0 auto;
+        }
         .title {
           padding-top: 125px;
           font-size: 50px;
@@ -270,7 +273,7 @@
         }
         .paragraph {
           padding-top: 20px;
-          // width: 700px;
+          margin: 0 auto;
         }
         .certificate {
           padding-top: 0px;
@@ -414,9 +417,16 @@
             font-size: 17.3346px;
             line-height: 21px;
             color: #ffffff;
-            padding-left: 30px;
-            padding-bottom: 10px;
-            padding-top: 35px;
+            padding: 15px 15px 15px 15px;
+          }
+        }
+
+        
+        @media screen and (max-width: 1395px) {
+          .box {
+            max-width: 700px;
+            padding: 0px;
+            margin: 0 auto;
           }
         }
 
@@ -478,6 +488,16 @@
           }
         }
       }
+
+       @media screen and (max-width: 1024px) {
+          .box {
+            .paragraph {
+              max-width: 700px;
+              padding-top: 13px;
+              padding-top: 15px;
+            }
+          }
+        }
 
       @media screen and (max-width: 768px) {
         .indent {
@@ -565,6 +585,14 @@
           }
         }   
       }
+    }
+    @media screen and (max-width: 1210px) {
+      .blocks{
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }   
     }
   }
 }

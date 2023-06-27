@@ -8,42 +8,61 @@ const Footer = () => {
         <div className={style.blocks}>
           <div className={style.block}>
             <div className={style.logotype}>LOGISTICS </div>
-            <p className={style.paragraph}>Связаться можно по телефону</p>
+            <p className={style.paragraph}>Телефон для связи:</p>
             <p className={style.number}>+7 (495) 539-55-55</p>
             <button>Задать свой войпрос</button>
           </div>
 
           <div className={style.block}>
             <h4 className={style.title}>Главная</h4>
-            <p className={style.paragraph}>Главная страница</p>
-            <p className={style.paragraph}>Что такое Poizon?</p>
-            <p className={style.paragraph}>Ссылка на poizon</p>
-            <p className={style.paragraph}>Наш пункт выдачи</p>
+
+            <nav>
+              <ul className={style.items}>
+                <li className={style.item}>Главная страница</li>
+                <li className={style.item}>Что такое Poizon?</li>
+                <li className={style.item}>Ссылка на poizon</li>
+                <li className={style.item}>Наш пункт выдачи</li>
+              </ul>
+            </nav>
           </div>
 
           <div className={style.block}>
             <h4 className={style.title}>Каталог</h4>
-            <p className={style.paragraph}>Кроссовки</p>
-            <p className={style.paragraph}>Вверхняя одежда</p>
-            <p className={style.paragraph}>Нижняя одежда</p>
-            <p className={style.paragraph}>Техника</p>
-            <p className={style.paragraph}>Другое</p>
+            <nav>
+              <ul className={style.items}>
+                <li className={style.item}>Кроссовки</li>
+                <li className={style.item}>Вверхняя одежда</li>
+                <li className={style.item}>Нижняя одежда</li>
+                <li className={style.item}>Техника</li>
+                <li className={style.item}>Другое</li>
+              </ul>
+            </nav>
           </div>
 
           <div className={style.block}>
             <h4 className={style.title}>Оплата и доставка</h4>
-            <p className={style.paragraph}>Калькулятор</p>
-            <p className={style.paragraph}>Определение размера</p>
-            <p className={style.paragraph}>Информация о доставке</p>
-            <p className={style.paragraph}>Способы оплаты</p>
+
+            <nav>
+              <ul className={style.items}>
+                <li className={style.item}>Калькулятор</li>
+                <li className={style.item}>Определение размера</li>
+                <li className={style.item}>Информация о доставке</li>
+                <li className={style.item}>Способы оплаты</li>
+              </ul>
+            </nav>
           </div>
 
           <div className={style.block}>
             <h4 className={style.title}>Контакты</h4>
-            <p className={style.paragraph}>Как с нами связаться?</p>
-            <p className={style.paragraph}>Наш пункт выдачи</p>
-            <p className={style.paragraph}>Помощь</p>
-            <p className={style.paragraph}>FAQ</p>
+
+            <nav>
+              <ul className={style.items}>
+                <li className={style.item}>Как с нами связаться?</li>
+                <li className={style.item}>Наш пункт выдачи</li>
+                <li className={style.item}>Помощь</li>
+                <li className={style.item}>FAQ</li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
