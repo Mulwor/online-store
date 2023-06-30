@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './Header.module.scss';
 
-import Bell from '../../../assets/svg/bell.svg';
-import Message from '../../../assets/svg/message.svg';
+import Bell from '../../../shared/assets/svg/bell.svg';
+import Message from '../../../shared/assets/svg/message.svg';
 
-function Header() {
+export const LayoutHeader = () => {
   return (
     <header className={style.header}>
       <div className={style.wrapper}>
@@ -32,6 +32,4 @@ function Header() {
       </div>
     </header>
   );
-}
-
-export default Header;
+};

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Sections.module.scss';
 
-const Sections = () => {
+export const Sections = () => {
   return (
     <>
       <section className={style.logistic}>
@@ -20,7 +20,7 @@ const Sections = () => {
             <div>
               <img
                 className={style.snicket}
-                src="/src/assets/snikents/main.png"
+                src="/src/shared/assets/snikents/main.png"
                 alt="Главная кросовка года"
               />
             </div>
@@ -52,7 +52,7 @@ const Sections = () => {
             <div>
               <img
                 className={style.certificate}
-                src="/src/assets/photos/certificate.png"
+                src="/src/shared/assets/photos/certificate.png"
                 alt="Здесь должен быть сертификат"
               />
             </div>
@@ -70,7 +70,11 @@ const Sections = () => {
 
               <div className={style.row}>
                 <div className={style.img}>
-                  <img className={style.poizon} src="/src/assets/photos/poizon.png" alt="Poizon" />
+                  <img
+                    className={style.poizon}
+                    src="/src/shared/assets/photos/poizon.png"
+                    alt="Poizon"
+                  />
                 </div>
 
                 <div className={style.box}>
@@ -111,7 +115,7 @@ const Sections = () => {
             </div>
 
             <div className={style.img}>
-              <img className={style.map} src="/src/assets/photos/map.png" alt="Poizon" />
+              <img className={style.map} src="/src/shared/assets/photos/map.png" alt="Poizon" />
             </div>
           </div>
         </div>
@@ -119,5 +123,3 @@ const Sections = () => {
     </>
   );
 };
-
-export default Sections;

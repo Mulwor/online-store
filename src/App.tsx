@@ -1,13 +1,12 @@
 import React from 'react';
-import './App.css';
-import Layout from '../src/layout/Layout';
-import Burger from '../src/components/burger';
+import './app/index.scss';
+import { Layout } from './pages/home/Layout';
 
 function App() {
   return (
-    <>
+    <div>
       <Layout />
-    </>
+    </div>
   );
 }
 

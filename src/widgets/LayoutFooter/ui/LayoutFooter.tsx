@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Footer.module.scss';
 
-const Footer = () => {
+export const LayoutFooter = () => {
   return (
     <footer className={style.footer}>
       <div className={style.wrapper}>
@@ -69,5 +69,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
