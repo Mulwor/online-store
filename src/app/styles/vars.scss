@@ -1,0 +1,70 @@
+:root {
+  // * Цвета
+  --color-white: #ffffff;
+  --color-dark: #111111;
+  --color-green: #008968; 
+  --color-primary-100: #8f8f8f;
+  --color-primary-200: #5c5c5c;
+  --color-primary-250: #333333;
+  --color-primary-400: #191919;
+  --color-error: #ff3f49;
+  --color-filled-white-hover: #e9e9e9;
+  --color-filled-white-hover-border: #e9e9e9;
+
+  // * Насышенность
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+
+  // * Размер шрифта
+  --font-size-50: 12px;
+  --font-size-100: 14px;
+  --font-size-150: 16px;
+  --font-size-200: 18px;
+  --font-size-250: 22px;
+  --font-size-300: 26px;
+  --font-size-350: 28px;
+  --font-size-400: 30px;
+  --font-size-500: 32px;
+  --font-size-600: 36px;
+  --font-size-700: 40px;
+  --font-size-800: 52px;
+  --font-size-900: 98px;
+
+  // * Пространство между строками
+  --line-height-100: 9px;
+  --line-height-200: 12px;
+  --line-height-300: 13px;
+  --line-height-400: 20px;
+  --line-height-500: 22px;
+  --line-height-600: 25px;
+  --line-height-700: 30px;
+  --line-height-800: 40px;
+  --line-height-900: 91px;
+
+  --indent-xxxxxs: 2px;
+  --indent-xxxxs: 4px;
+  --indent-xxxs: 6px;
+  --indent-xxs: 8px;
+  --indent-xs: 10px;
+  --indent-sm: 12px;
+  --indent-md: 16px;
+  --indent-lg: 20px;
+  --indent-xl: 24px;
+  --indent-xxl: 32px;
+  --indent-xxxl: 40px;
+  --indent-xxxxl: 48px;
+
+
+  --width-for-computer: 1860px;
+
+  --main-padding: 13%;
+  --main-padding-desktop: 70px;
+  --main-padding-pad: 40px;
+  --main-padding-phone: 23px;
+  --main-padding-small-phone: 12px;
+
+  --font-main: "Montserrat", Roboto, Helvetica neue, Helvetica, sans-serif;
+}

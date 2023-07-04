@@ -1,0 +1,166 @@
+.service {
+  background-image: url(/src/shared/assets/background/poizon.png);
+  background-color: #000000;
+  color: white;
+  padding-bottom: 7rem;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .block {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .indent {
+        padding-top: 6.25em;
+
+        .title {
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 63.5285px;
+          line-height: 76px;
+          text-align: center;
+        }
+
+        .explanation {
+          text-align: center;
+          color: #008968;
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28.7024px;
+          line-height: 34px;
+          padding-bottom: 60px;
+        }
+
+        .img {
+          margin: 0 auto;
+        }
+
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .box {
+          padding-left: 30px;
+          max-width: 500px;
+
+          .paragraph {
+            text-align: justify;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17.3346px;
+            line-height: 21px;
+            color: #ffffff;
+            padding: 15px 15px 15px 15px;
+          }
+        }
+
+        @media screen and (max-width: 1395px) {
+          .box {
+            max-width: 700px;
+            padding: 0px;
+            margin: 0 auto;
+          }
+        }
+
+        @media screen and (max-width: 1024px) {
+          .box {
+            .paragraph {
+              max-width: 700px;
+              padding-top: 13px;
+              padding-top: 15px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .title {
+            padding-top: 0px;
+            font-size: 30px;
+          }
+
+          .explanation {
+            padding-top: 7px;
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .box {
+            padding-left: 0px;
+            max-width: 700px;
+
+            .paragraph {
+              padding-top: 15px;
+              text-align: center;
+              font-size: 16px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          .explanation {
+            padding-bottom: 30px;
+          }
+
+          .title {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 9px;
+            margin: 0 auto;
+            width: 250px;
+          }
+
+          .box {
+            .paragraph {
+              font-size: 9px;
+              width: 250px;
+              padding: 10px 10px 10px 10px;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .box {
+          .paragraph {
+            max-width: 700px;
+            padding-top: 13px;
+            padding-top: 15px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .indent {
+          padding-top: 3.25em;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        .indent {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .service {
+    padding-bottom: 1rem;
+  }
+}

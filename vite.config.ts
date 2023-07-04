@@ -9,4 +9,11 @@ export default defineConfig({
       usePolling: true,
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/app/styles/mixin.scss";',
+      },
+    },
+  },
 });

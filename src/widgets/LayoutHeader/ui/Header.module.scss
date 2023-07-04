@@ -1,17 +1,15 @@
 .header {
-  background-color: black;
-  color: #ffffff;
+  background-color: var(--color-primary-400);
+  color: var(--color-white);
   padding-bottom: 30px;
 
   .wrapper {
-    max-width: 1860px;
+    max-width: var(--width-for-computer);
     margin: 0 auto;
     padding: 0 60px;
 
     .block {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex-center-between;
 
       .logotype {
         padding-top: 30px;
@@ -40,8 +38,7 @@
       }
 
       .icons {
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
       }
 
       .bell,
@@ -59,8 +56,7 @@
         top: 12px;
         font-size: 17px;
         padding: 15px 35px;
-        background-color: #008968;
-        color: #ffffff;
+        background-color: var(--color-green);
         border-radius: 25px;
         transition: transform 0.3s;
         letter-spacing: 1px;
@@ -69,8 +65,7 @@
 
       @media screen and (max-width: 1210px) {
         .block {
-          display: flex;
-          justify-content: space-between;
+          @include flex-between;
         }
 
         .list {
@@ -81,17 +76,6 @@
       @media screen and (max-width: 768px) {
         .icons, .account {
           display: none;
-        }
-      }
-      
-      // Бургер-меню 
-      @media screen and (max-width: 360px) {
-        .icons, .account {
-          display: none;
-        }
-
-        .logotype {
-          margin: 0 auto;
         }
       }
     }
