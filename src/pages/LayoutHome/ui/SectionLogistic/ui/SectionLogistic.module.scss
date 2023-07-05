@@ -1,200 +1,154 @@
 .logistic {
-    background-image: url(/src/shared/assets/background/logistics.png);
-    background-size: cover;
-    color: white;
-    padding-bottom: 7rem;
-  
-    .wrapper {
-      max-width: 1860px;
-      margin: 0 auto;
-      padding: 0 60px;
-  
-      .blocks {
-        display: flex;
-        justify-content: space-between;
-  
-        .title {
-          padding-top: 250px;
-          font-size: 6rem;
-        }
-  
-        .title::first-line {
+  background-image: url(/src/shared/assets/background/logistics.png);
+  background-size: cover;
+  color: var(--color-white);
+  padding-bottom: 3rem;
+
+  .wrapper {
+    max-width: var(--desktop);
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .blocks {
+      @include flex-between;
+
+      .title {
+        padding-top: 250px;
+        font-size: var(--font-size-850);
+
+        &::first-line {
           text-transform: uppercase;
         }
-  
-        .paragraph {
-          padding-top: 30px;
-          padding-bottom: 30px;
-          width: 600px;
-          font-size: 21px;
-          font-weight: 400;
-          text-align: justify;
-        }
-  
-        .catalog {
-          width: 265px;
-          font-size: 17px;
-          padding: 15px 35px;
-          background-color: #008968;
-          color: #ffffff;
-          border-radius: 100px;
-          transition: transform 0.3s;
-          letter-spacing: 1px;
-          border: none;
-        }
-  
-        .calculator {
-          margin-left: 20px;
-          width: 300px;
-          font-size: 17px;
-          padding: 15px 35px;
-          background-color: #000000;
-          color: #ffffff;
-          border-radius: 50px;
-          transition: transform 0.3s;
-          letter-spacing: 1px;
-          border: none;
-        }
-  
-        .catalog::after,
-        .calculator::after {
-          content: '→';
-          padding-left: 10px;
-        }
-  
-        .catalog:hover {
-          transition: 0.3s;
-          background-color: #049e7a;
-        }
-  
-        .calculator:hover {
-          transition: 0.3s;
-          background-color: #050505d7;
-        }
-  
-        .snicket {
-          padding-top: 7.5rem;
-        }
-  
-        @media screen and (max-width: 1210px) {
-          .block {
-            margin: 0 auto;
-          }
-          .title {
-            padding-top: 125px;
-            font-size: 50px;
-            text-align: center;
-          }
-  
-          .snicket {
-            padding-top: 5.5rem;
-          }
-        }
-  
-        @media screen and (max-width: 1024px) {
-          .title {
-            padding-top: 50px;
-            font-size: 70px;
-          }
-  
-          .snicket {
-            width: 85%;
-          }
-        }
-  
-        @media screen and (max-width: 768px) {
-          .paragraph {
-            padding-bottom: 2rem;
-          }
-  
-          .snicket {
-            width: 75%;
-          }
-  
-          .title {
-            text-align: center;
-            padding-top: 20px;
-            font-size: 30px;
-          }
-  
-          .paragraph {
-            padding-top: 20px;
-            margin: 0 auto;
-            width: 350px;
-            font-size: 16px;
-            text-align: center;
-          }
-  
-          .catalog,
-          .calculator {
-            margin: 0 auto;
-            // margin-left: 28px;
-            font-size: 10px;
-            padding: 10px 35px;
-            border-radius: 70px;
-            width: 200px;
-            height: 35px;
-          }
-  
-          .calculator {
-            padding: 10px;
-            margin-top: 10px;
-          }
-  
-          .snicket {
-            margin-left: 40px;
-            padding-top: 20px;
-          }
-        }
-  
-        @media screen and (max-width: 360px) {
-          .title {
-            padding-top: 20px;
-            font-size: 30px;
-          }
-  
-          .paragraph {
-            padding-top: 20px;
-            text-align: center;
-            width: 280px;
-            font-size: 10px;
-          }
-  
-          .catalog,
-          .calculator {
-            margin-left: 28px;
-            font-size: 10px;
-            padding: 10px 35px;
-            border-radius: 70px;
-            width: 222px;
-            height: 35px;
-          }
-  
-          .calculator {
-            padding: 10px;
-            margin-top: 10px;
-          }
-  
-          .snicket {
-            margin-left: 10px;
-            padding-top: 25px;
-          }
+      }
+
+      @media screen and (max-width: 1210px) {
+        .title {
+          padding-top: 125px;
+          font-size: var(--font-size-800);
+          text-align: center;
         }
       }
-  
+
       @media screen and (max-width: 1024px) {
-        .blocks {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
+        .title {
+          padding-top: 50px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .title {
+          padding-top: 20px;
+          font-size: var(--font-size-400);
+        }
+      }
+
+      .paragraph {
+        max-width: 600px;
+        padding: 30px 5px 30px 5px;
+        font-size: var(--font-size-250);
+        text-align: justify;
+      }
+
+      @media screen and (max-width: 768px) {
+        .paragraph {
+          margin: 0 auto;
+          text-align: center;
+          font-size: var(----font-size-150);
+          text-align: center;
+          padding: 20px 0px 2rem 0px;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        .paragraph {
+          font-size: var(--font-size-50);
+        }
+      }
+
+      .buttons {
+        @include flex-wrap-between;
+        gap: 10px;
+
+        .catalog {
+          background-color: var(--color-green);
+          font-size: var(--font-size-150);
+          padding: 15px 58px;
+          border-radius: 25px;
+
+          &::after {
+            content: '→';
+            padding-left: 6px;
+          }
+
+          &:hover {
+            transition: 0.3s;
+            background-color: #049e7a;
+          }
+        }
+
+        @media screen and (max-width: 1608px) {
+          .catalog {
+            padding: 14px 66px;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .catalog {
+            margin: 0 auto;
+            font-size: 10px;
+            padding: 10px 46px;
+            border-radius: 70px;
+          }
+        }
+
+        .calculator {
+          background-color: var(--color-black);
+          font-size: var(--font-size-150);
+          padding: 15px 50px;
+          border-radius: 25px;
+
+          &::after {
+            content: '→';
+            padding-left: 6px;
+          }
+
+          &:hover {
+            transition: 0.3s;
+            background-color: #050505d7;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .calculator {
+            margin: 0 auto;
+            font-size: 10px;
+            padding: 10px 35px;
+            border-radius: 70px;
+          }
+        }
+      }
+
+      .snicket {
+        padding-top: 7.5rem;
+      }
+
+      @media screen and (max-width: 1210px) {
+        .snicket {
+          padding-top: 5.5rem;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .snicket {
+          padding-top: 20px;
         }
       }
     }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .logistic {
-      padding-bottom: 3rem;
+
+    @media screen and (max-width: 1024px) {
+      .blocks {
+        @include flex-wrap-center;
+      }
     }
   }
-  
+}

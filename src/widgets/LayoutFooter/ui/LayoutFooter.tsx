@@ -10,7 +10,7 @@ export const LayoutFooter = () => {
             <div className={style.logotype}>LOGISTICS </div>
             <p className={style.paragraph}>Телефон для связи:</p>
             <p className={style.number}>+7 (495) 539-55-55</p>
-            <button>Задать свой войпрос</button>
+            <button className={style.question}>Задать свой войпрос</button>
           </div>
 
           <div className={style.block}>
@@ -39,7 +39,7 @@ export const LayoutFooter = () => {
             </nav>
           </div>
 
-          <div className={style.block}>
+          <nav className={style.block}>
             <h4 className={style.title}>Оплата и доставка</h4>
 
             <nav>
@@ -50,7 +50,7 @@ export const LayoutFooter = () => {
                 <li className={style.item}>Способы оплаты</li>
               </ul>
             </nav>
-          </div>
+          </nav>
 
           <div className={style.block}>
             <h4 className={style.title}>Контакты</h4>

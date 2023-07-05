@@ -1,15 +1,12 @@
 import React from 'react';
 import style from './Header.module.scss';
 
-import Bell from '../../../shared/assets/svg/bell.svg';
-import Message from '../../../shared/assets/svg/message.svg';
-
 export const LayoutHeader = () => {
   return (
     <header className={style.header}>
       <div className={style.wrapper}>
         <div className={style.block}>
-          <div className={style.logotype}>LOGISTICS </div>
+          <p className={style.logotype}>LOGISTICS </p>
 
           <nav className={style.navigation}>
             <ul className={style.list}>
@@ -20,14 +17,7 @@ export const LayoutHeader = () => {
             </ul>
           </nav>
 
-          <div className={style.icons}>
-            <img className={style.bell} src={Bell} alt="Колокол" />
-            <img className={style.message} src={Message} alt="Сообщение" />
-          </div>
-
-          <div>
-            <button className={style.account}>Личный кабинет</button>
-          </div>
+          <button className={style.account}>Личный кабинет</button>
         </div>
       </div>
     </header>

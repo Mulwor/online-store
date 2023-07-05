@@ -1,82 +1,69 @@
 .header {
   background-color: var(--color-primary-400);
   color: var(--color-white);
-  padding-bottom: 30px;
+  height: 80px;
 
   .wrapper {
-    max-width: var(--width-for-computer);
+    max-width: var(--desktop);
     margin: 0 auto;
     padding: 0 60px;
+    height: 100%;
 
     .block {
       @include flex-center-between;
+      height: 100%;
 
       .logotype {
-        padding-top: 30px;
         cursor: pointer;
-        font-size: 20px;
-      }
+        font-size: var(--font-size-225);
 
-      .logotype::after {
-        content: "X";
-        color: rgb(37, 182, 37);
+        &::after {
+          content: 'X';
+          color: var(--color-light-green);
+        }
       }
 
       .list {
         display: flex;
-        padding-top: 30px;
-        font-weight: 400;
+        font-weight: var(--font-weight-500);
 
         li {
           margin-right: 70px;
           cursor: pointer;
+
+          &::first-line {
+            text-transform: uppercase;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
-
-        li::first-line {
-          text-transform: uppercase;
-        }
-      }
-
-      .icons {
-        @include flex-between;
-      }
-
-      .bell,
-      .message,
-      .account {
-        padding-top: 30px;
-      }
-
-      .message {
-        padding-left: 40px;
-      }
-
-      .account {
-        position: relative;
-        top: 12px;
-        font-size: 17px;
-        padding: 15px 35px;
-        background-color: var(--color-green);
-        border-radius: 25px;
-        transition: transform 0.3s;
-        letter-spacing: 1px;
-        border: none;
       }
 
       @media screen and (max-width: 1210px) {
-        .block {
-          @include flex-between;
-        }
-
         .list {
           display: none;
         }
       }
 
+      .account {
+        background-color: var(--color-green);
+        font-size: var(--font-size-200);
+        padding: 15px 35px;
+        border-radius: 25px;
+      }
+
       @media screen and (max-width: 768px) {
-        .icons, .account {
+        .account {
           display: none;
         }
+      }
+    }
+
+    @media screen and (max-width: 1210px) {
+      .block {
+        @include flex-between;
       }
     }
   }

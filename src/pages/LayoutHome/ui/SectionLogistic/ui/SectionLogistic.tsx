@@ -12,8 +12,10 @@ export const SectionLogistic = () => {
               Закажем абсолютную любую позицию из Китая! Одежда, обувь, аксессуары, электроника и
               многое другое! Цены значительно ниже, чем в России.
             </p>
-            <button className={style.catalog}>Перейти к каталогу</button>
-            <button className={style.calculator}>Перейти к калькулятору</button>
+            <div className={style.buttons}>
+              <button className={style.catalog}>Перейти к каталогу</button>
+              <button className={style.calculator}>Перейти к калькулятору</button>
+            </div>
           </div>
 
           <div>
