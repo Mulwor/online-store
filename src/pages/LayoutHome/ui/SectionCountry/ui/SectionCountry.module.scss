@@ -14,7 +14,7 @@
 
       .block {
         max-width: 600px;
-        @include flex-column-around-wrap;
+        @include flex-column-center-wrap;
 
         .title {
           text-align: center;
