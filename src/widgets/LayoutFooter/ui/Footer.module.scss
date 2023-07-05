@@ -1,0 +1,74 @@
+.footer {
+  background-color: black;
+  color: #ffffff;
+  padding-bottom: 1rem;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .blocks {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      column-gap: 1rem;
+      row-gap: 1rem;
+
+      .block {
+        flex-grow: 1;
+        flex-shrink: 0;
+        text-align: center;
+
+        .logotype {
+          cursor: pointer;
+          font-size: 25px;
+
+          &::after {
+            content: 'X';
+            color: rgb(37, 182, 37);
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          .logotype {
+            font-size: var(--font-size-100);
+          }
+        }
+
+        .title {
+          font-size: 25px;
+        }
+
+        @media screen and (max-width: 360px) {
+          .title {
+            font-size: var(--font-size-50);
+          }
+        }
+
+        .paragraph {
+          font-size: 20px;
+        }
+
+        @media screen and (max-width: 1210px) {
+          .item, .number, .paragraph, .question {
+            padding: 3px;
+            font-size: var(--font-size-250);
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .item, .number, .paragraph, .question {
+            font-size: var(--font-size-150);
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          .item, .number, .paragraph, .question {
+            font-size: var(--font-size-50);
+          }
+        }
+      }
+    }
+  }
+}
