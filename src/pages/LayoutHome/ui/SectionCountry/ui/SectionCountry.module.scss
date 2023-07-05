@@ -1,0 +1,69 @@
+.country {
+  background-image: url(/src/shared/assets/background/poizon.png);
+  background-color: #000000;
+  color: var(--color-white);
+  padding-bottom: 2rem;
+
+  .wrapper {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .blocks {
+      display: flex;
+
+      .block {
+        max-width: 600px;
+        @include flex-column-center-wrap;
+
+        .title {
+          text-align: center;
+          padding-top: 50px;
+          font-size: var(--font-size-700);
+        }
+
+        @media screen and (max-width: 768px) {
+          .title {
+            padding-top: 0px;
+            font-size: var(--font-size-400);
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          .title {
+            font-size: var(--font-size-250);
+          }
+        }
+
+        .paragraph {
+          text-align: justify;
+          font-size: var(--font-size-225);
+          padding: 15px 15px 15px 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+          .paragraph {
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            font-size: var(--font-size-150);
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          .paragraph {
+            font-size: var(--font-size-50);
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1210px) {
+      .blocks {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
