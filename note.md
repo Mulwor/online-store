@@ -2,8 +2,7 @@
 
 `2.` Stack: react; module.sass;
 
-
-Ctrl + Shift + P => reload window
+Ctrl + Shift + P => reload windo
 
 `3. `Макет:
 

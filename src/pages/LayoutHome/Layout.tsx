@@ -1,4 +1,3 @@
-import React from 'react';
 import { LayoutHeader } from '../../widgets/LayoutHeader';
 import { LayoutFooter } from '../../widgets/LayoutFooter';
 import { SectionHome } from './ui/Sections';

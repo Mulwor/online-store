@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './SectionLogistic.module.scss';
 
 export const SectionLogistic = () => {

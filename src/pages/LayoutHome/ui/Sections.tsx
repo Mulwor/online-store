@@ -1,5 +1,3 @@
-import React from 'react';
-import style from './Sections.module.scss';
 import { SectionLogistic } from './SectionLogistic';
 import { SectionOrder } from './SectionOrder/index';
 import { SectionService } from './SectionService';

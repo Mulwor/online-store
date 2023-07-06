@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './SectionOrder.module.scss';
 
 export const SectionOrder = () => {

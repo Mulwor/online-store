@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './SectionService.module.scss';
 
 export const SectionService = () => {
