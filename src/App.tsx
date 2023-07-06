@@ -1,12 +1,12 @@
-import './app/index.scss';
-import { Layout } from './pages/LayoutHome/Layout';
+import './app/index.scss'
+import { BurgerMenu } from './features/BurgerMenu'
 
 function App() {
   return (
     <div>
-      <Layout />
+      <BurgerMenu />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

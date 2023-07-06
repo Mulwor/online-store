@@ -1,5 +1,5 @@
 .order {
-  background-image: url(/src/shared/assets/background/green.png);
+  background-image: url("/src/shared/assets/background/green.png");
   background-size: cover;
   color: var(--color-filled-white-hover);
   padding-bottom: 5rem;
@@ -16,7 +16,7 @@
       font-size: var(--font-size-875);
     }
 
-    @media screen and (max-width: 1210px) {
+    @media screen and (width <= 1210px) {
       .header {
         text-align: center;
         padding-top: 100px;
@@ -24,14 +24,14 @@
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       .header {
         padding-top: 50px;
         font-size: 30px;
       }
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (width <= 360px) {
       .header {
         padding-top: 20px;
         font-size: 20px;
@@ -39,26 +39,26 @@
     }
 
     .paragraph {
-      padding: 9px 0px 25px 0px;
+      padding: 9px 0 25px;
       max-width: 500px;
       font-size: 23px;
     }
 
-    @media screen and (max-width: 1210px) {
+    @media screen and (width <= 1210px) {
       .paragraph {
         padding-top: 20px;
         margin: 0 auto;
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       .paragraph {
         text-align: center;
         font-size: var(--font-size-150);
       }
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (width <= 360px) {
       .paragraph {
         font-size: var(--font-size-50);
       }
@@ -66,8 +66,8 @@
 
     .block {
       max-width: 700px;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 30px 60px 0px 60px;
+      background: rgb(0 0 0 / 70%);
+      padding: 30px 60px 0;
       border-radius: 30px;
       text-align: justify;
 
@@ -77,13 +77,13 @@
         text-transform: uppercase;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         .title {
           font-size: 19px;
         }
       }
 
-      @media screen and (max-width: 360px) {
+      @media screen and (width <= 360px) {
         .title {
           font-size: 10px;
         }
@@ -93,22 +93,22 @@
         padding-bottom: 10px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         .paragraph {
           font-size: var(--font-size-150);
         }
       }
 
-      @media screen and (max-width: 360px) {
+      @media screen and (width <= 360px) {
         .paragraph {
           font-size: var(--font-size-50);
         }
       }
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (width <= 360px) {
       .block {
-        padding: 20px 30px 0px 30px;
+        padding: 20px 30px 0;
       }
     }
 
@@ -116,16 +116,16 @@
       padding-top: 70px;
     }
 
-    @media screen and (max-width: 1210px) {
+    @media screen and (width <= 1210px) {
       .certificate {
-        padding-top: 0px;
+        padding-top: 0;
       }
     }
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .order {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }

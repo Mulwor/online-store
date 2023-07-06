@@ -1,61 +1,22 @@
-// * Typescript.config - это json-файл, который описывает опшыны для компилятора тайпскрипта.
 {
   "compilerOptions": {
-    // * Target - какой версией JavaScript вы хотите скопилировать ваш проект:
-    // * - es2016 ()
-    // * - esnext () - если есть необходимость в поддержании всех фитч, и чтобы тайпскрипт не производил транспиляцию проекта
     "target": "esnext",
-
-    // * Lib - отвечает за то, какие дефолтные библиотеки, которые приезжают с TS стоит подключать
     "lib": ["DOM", "ESNext", "DOM.Iterable"],
-
-    // * Позволяет не импортировать React и транспилирует его в: return _jsx("h1", { children: "Hello world" });
     "jsx": "react-jsx",
-
-    // * Нужен для поддержки декораторов в Тайпскрипт коде
-    "experimentalDecorators": true,
-
-    /* 
-    * Отвечает за то как классы будут транспилировать в старый код. Они могут компилироватся
-    * с полной совместимости с ЕС-стандартом
-    * "useDefineForClassFields": true,             
-    */
-
     "module": "esnext",
-    "strict": true,
-    
-    // * Отвечат за то, как резолвятся модули. Кейс: когда мы импортируем файлы, у нас в from 
-    // * './some-folder' - выводится ошибка. Чтобы его устранить. Нужно написать эту команду
     "moduleResolution": "node",
-    "baseUrl": "./",
-
-    // * Отвечает за то, чтобы JS/TS можно было спокойно импортить в json модули. У них автоматически будет
-    // * Генерится типизация. На импорты json они не будут ругаться
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    
-    // * "allowJs: true;                - разрешает TS импортировать файлы из JS
-  
-    //* Ускоряет процесс компиляции. Суть заключается в том, что каждый проект файла компилиции как отдельный модуль
-    // "isolatedModules": true,
-
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
+    // "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "skipLibCheck": true,
+    "baseUrl": "./",
+    "resolveJsonModule": true
   },
- 
-  // * Отвечает за то какие файлы попадают в ваш процесс компиляции, какие файлы чекает тайпскрипт
   "include": ["./src/**/*", "styled.d.ts", "vite.config.ts", ".eslintrc.js"],
-  
-  // * Exclude - какие файлы нужно исключить из компиляции. Например: "exclude": ["node_modules", "exclude_me"],,
-  
-  // * Extence - отвечает за наследования конфигов:  "extends": ["./tsconfig.base.json"]. Например у нас есть
-  // * файл уровнем выше: { "compilerOptions": { "strict": true } }. И мы можешь его от туда взять, если например мы забыли
-  // * Написать strict true
-
-  "references": [
-    { "path": "./tsconfig.node.json" }
-  ]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

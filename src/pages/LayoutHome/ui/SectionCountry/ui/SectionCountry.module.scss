@@ -1,6 +1,6 @@
 .country {
-  background-image: url(/src/shared/assets/background/poizon.png);
-  background-color: #000000;
+  background-image: url("/src/shared/assets/background/poizon.png");
+  background-color: #000;
   color: var(--color-white);
   padding-bottom: 2rem;
 
@@ -14,6 +14,7 @@
 
       .block {
         max-width: 600px;
+
         @include flex-column-center-wrap;
 
         .title {
@@ -22,14 +23,14 @@
           font-size: var(--font-size-700);
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (width <= 768px) {
           .title {
-            padding-top: 0px;
+            padding-top: 0;
             font-size: var(--font-size-400);
           }
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (width <= 360px) {
           .title {
             font-size: var(--font-size-250);
           }
@@ -38,18 +39,18 @@
         .paragraph {
           text-align: justify;
           font-size: var(--font-size-225);
-          padding: 15px 15px 15px 15px;
+          padding: 15px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (width <= 768px) {
           .paragraph {
-            padding: 10px 10px 10px 10px;
+            padding: 10px;
             text-align: center;
             font-size: var(--font-size-150);
           }
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (width <= 360px) {
           .paragraph {
             font-size: var(--font-size-50);
           }
@@ -57,12 +58,11 @@
       }
     }
 
-    @media screen and (max-width: 1210px) {
+    @media screen and (width <= 1210px) {
       .blocks {
         align-items: center;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
       }
     }
   }

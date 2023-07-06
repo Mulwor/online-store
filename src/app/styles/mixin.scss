@@ -33,14 +33,12 @@
 
 @mixin flex-column-around-wrap {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 @mixin flex-column-center-wrap {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-wrap: wrap;
 }

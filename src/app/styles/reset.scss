@@ -3,9 +3,10 @@ html {
 }
 
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border: none;
+
   // outline: 1px solid red;
 }
 
@@ -82,8 +83,8 @@ button,
 input[type='submit'] {
   display: inline-block;
   box-shadow: none;
-  background-color: transparent;
   background: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -108,7 +109,6 @@ legend {
 }
 
 body {
-  font-family: 'SF Pro Display';
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
