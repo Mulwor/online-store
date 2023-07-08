@@ -1,1 +1,1 @@
-export { SectionOrder } from './ui/SectionOrder';
+export { SectionOrder } from './ui/SectionOrder'

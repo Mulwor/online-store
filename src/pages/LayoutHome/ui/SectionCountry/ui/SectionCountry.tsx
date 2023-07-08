@@ -1,4 +1,4 @@
-import style from './SectionCountry.module.scss';
+import style from './SectionCountry.module.scss'
 
 export const SectionCountry = () => {
   return (
@@ -23,5 +23,5 @@ export const SectionCountry = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

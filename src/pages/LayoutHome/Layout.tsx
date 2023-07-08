@@ -1,6 +1,6 @@
-import { LayoutHeader } from '../../widgets/LayoutHeader';
-import { LayoutFooter } from '../../widgets/LayoutFooter';
-import { SectionHome } from './ui/Sections';
+import { LayoutHeader } from '../../widgets/LayoutHeader'
+import { LayoutFooter } from '../../widgets/LayoutFooter'
+import { SectionHome } from './ui/Sections'
 
 export const Layout = () => {
   return (
@@ -9,5 +9,5 @@ export const Layout = () => {
       <SectionHome />
       <LayoutFooter />
     </>
-  );
-};
+  )
+}

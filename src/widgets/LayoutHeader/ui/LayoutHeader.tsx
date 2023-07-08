@@ -1,4 +1,4 @@
-import style from './Header.module.scss';
+import style from './Header.module.scss'
 
 export const LayoutHeader = () => {
   return (
@@ -20,5 +20,5 @@ export const LayoutHeader = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}

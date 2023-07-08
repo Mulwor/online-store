@@ -1,1 +1,1 @@
-export { SectionService } from './ui/SectionService';
+export { SectionService } from './ui/SectionService'

@@ -1,1 +1,1 @@
-export { SectionLogistic } from './ui/SectionLogistic';
+export { SectionLogistic } from './ui/SectionLogistic'

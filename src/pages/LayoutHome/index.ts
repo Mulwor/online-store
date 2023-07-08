@@ -1,1 +1,1 @@
-export { SectionHome } from './ui/Sections';
+export { SectionHome } from './ui/Sections'

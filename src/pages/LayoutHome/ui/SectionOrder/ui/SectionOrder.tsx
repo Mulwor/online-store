@@ -1,4 +1,4 @@
-import style from './SectionOrder.module.scss';
+import style from './SectionOrder.module.scss'
 
 export const SectionOrder = () => {
   return (
@@ -31,5 +31,5 @@ export const SectionOrder = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
