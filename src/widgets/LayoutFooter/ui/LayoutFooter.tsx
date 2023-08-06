@@ -1,5 +1,4 @@
-import React from 'react';
-import style from './Footer.module.scss';
+import style from './Footer.module.scss'
 
 export const LayoutFooter = () => {
   return (
@@ -67,5 +66,5 @@ export const LayoutFooter = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}

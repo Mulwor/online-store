@@ -1,6 +1,6 @@
 .footer {
   background-color: black;
-  color: #ffffff;
+  color: #fff;
   padding-bottom: 1rem;
 
   .wrapper {
@@ -26,11 +26,11 @@
 
           &::after {
             content: 'X';
-            color: rgb(37, 182, 37);
+            color: rgb(37 182 37);
           }
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (width <= 360px) {
           .logotype {
             font-size: var(--font-size-100);
           }
@@ -40,7 +40,7 @@
           font-size: 25px;
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (width <= 360px) {
           .title {
             font-size: var(--font-size-50);
           }
@@ -50,20 +50,20 @@
           font-size: 20px;
         }
 
-        @media screen and (max-width: 1210px) {
+        @media screen and (width <= 1210px) {
           .item, .number, .paragraph, .question {
             padding: 3px;
             font-size: var(--font-size-250);
           }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (width <= 768px) {
           .item, .number, .paragraph, .question {
             font-size: var(--font-size-150);
           }
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (width <= 360px) {
           .item, .number, .paragraph, .question {
             font-size: var(--font-size-50);
           }

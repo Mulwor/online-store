@@ -1,9 +1,7 @@
-import React from 'react';
-import style from './Sections.module.scss';
-import { SectionLogistic } from './SectionLogistic';
-import { SectionOrder } from './SectionOrder/index';
-import { SectionService } from './SectionService';
-import { SectionCountry } from './SectionCountry/ui/SectionCountry';
+import { SectionLogistic } from './SectionLogistic'
+import { SectionOrder } from './SectionOrder/index'
+import { SectionService } from './SectionService'
+import { SectionCountry } from './SectionCountry/ui/SectionCountry'
 
 export const SectionHome = () => {
   return (
@@ -13,5 +11,5 @@ export const SectionHome = () => {
       <SectionService />
       <SectionCountry />
     </main>
-  );
-};
+  )
+}

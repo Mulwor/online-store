@@ -1,5 +1,4 @@
-import React from 'react';
-import style from './SectionService.module.scss';
+import style from './SectionService.module.scss'
 
 export const SectionService = () => {
   return (
@@ -32,5 +31,5 @@ export const SectionService = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

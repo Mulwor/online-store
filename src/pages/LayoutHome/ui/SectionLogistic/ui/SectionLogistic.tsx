@@ -1,5 +1,4 @@
-import React from 'react';
-import style from './SectionLogistic.module.scss';
+import style from './SectionLogistic.module.scss'
 
 export const SectionLogistic = () => {
   return (
@@ -28,5 +27,5 @@ export const SectionLogistic = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

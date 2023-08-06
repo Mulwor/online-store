@@ -1,0 +1,121 @@
+@media screen and (width <= 1210px) {
+  .hamburger {
+    margin: 20px;
+    width: 30px;
+    height: 14px;
+    @include flex-column-between;
+    cursor: pointer;
+
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: #e0e0e0;
+      transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+    }
+
+    &.open {
+      .line {
+        &:nth-child(1) {
+          transform: rotate(135deg);
+          padding-top: 0px;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(135deg);
+        }
+      }
+    }
+
+    &.animating {
+      pointer-events: none;
+
+      .line {
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+      }
+
+      &:not(.open) {
+        .line {
+          &:nth-child(1) {
+            transform: translateY(0) rotate(0);
+          }
+
+          &:nth-child(2) {
+            opacity: 1;
+          }
+
+          &:nth-child(3) {
+            transform: translateY(0) rotate(0);
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    background-color: var(--color-black);
+    max-width: 400px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    height: 100vh;
+    top: 80px;
+    left: 0px;
+
+    ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+
+      .block {
+        margin-bottom: 30px;
+
+        &:nth-child(4) {
+          margin-bottom: 0px;
+        }
+      }
+
+      .title {
+        color: var(--color-green);
+        font-size: 23px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      // * Для того, чтобы title не копировался, возможно в будущем это
+      // * добавлю
+      // .title::selection {
+      //    background: transparent;
+      // }
+      // .title::-moz-selection {
+      //    background: transparent;
+      //  }
+
+      li {
+        color: var(--color-white);
+        padding: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        background: #0f0f0f;
+        border-radius: 3px;
+        width: 280px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        &::after {
+          content: " >";
+        }
+      }
+    }
+  }
+}

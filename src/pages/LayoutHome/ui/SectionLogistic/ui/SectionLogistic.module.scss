@@ -1,5 +1,5 @@
 .logistic {
-  background-image: url(/src/shared/assets/background/logistics.png);
+  background-image: url("/src/shared/assets/background/logistics.png");
   background-size: cover;
   color: var(--color-white);
   padding-bottom: 3rem;
@@ -21,7 +21,7 @@
         }
       }
 
-      @media screen and (max-width: 1210px) {
+      @media screen and (width <= 1210px) {
         .title {
           padding-top: 125px;
           font-size: var(--font-size-800);
@@ -29,13 +29,13 @@
         }
       }
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (width <= 1024px) {
         .title {
           padding-top: 50px;
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         .title {
           padding-top: 20px;
           font-size: var(--font-size-400);
@@ -44,22 +44,21 @@
 
       .paragraph {
         max-width: 600px;
-        padding: 30px 5px 30px 5px;
+        padding: 30px 5px;
         font-size: var(--font-size-250);
         text-align: justify;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         .paragraph {
           margin: 0 auto;
+          font-size: var(--font-size-150);
           text-align: center;
-          font-size: var(----font-size-150);
-          text-align: center;
-          padding: 20px 0px 2rem 0px;
+          padding: 20px 0 2rem;
         }
       }
 
-      @media screen and (max-width: 360px) {
+      @media screen and (width <= 360px) {
         .paragraph {
           font-size: var(--font-size-50);
         }
@@ -67,6 +66,7 @@
 
       .buttons {
         @include flex-wrap-between;
+
         gap: 10px;
 
         .catalog {
@@ -86,13 +86,13 @@
           }
         }
 
-        @media screen and (max-width: 1608px) {
+        @media screen and (width <= 1608px) {
           .catalog {
             padding: 14px 66px;
           }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (width <= 768px) {
           .catalog {
             margin: 0 auto;
             font-size: 10px;
@@ -118,7 +118,7 @@
           }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (width <= 768px) {
           .calculator {
             margin: 0 auto;
             font-size: 10px;
@@ -132,20 +132,20 @@
         padding-top: 7.5rem;
       }
 
-      @media screen and (max-width: 1210px) {
+      @media screen and (width <= 1210px) {
         .snicket {
           padding-top: 5.5rem;
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         .snicket {
           padding-top: 20px;
         }
       }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (width <= 1024px) {
       .blocks {
         @include flex-wrap-center;
       }

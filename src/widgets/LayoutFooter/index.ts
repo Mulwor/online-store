@@ -1,1 +1,1 @@
-export { LayoutFooter } from './ui/LayoutFooter';
+export { LayoutFooter } from './ui/LayoutFooter'

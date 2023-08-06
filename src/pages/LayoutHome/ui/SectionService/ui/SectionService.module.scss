@@ -1,6 +1,6 @@
 .service {
-  background-image: url(/src/shared/assets/background/poizon.png);
-  background-color: #000000;
+  background-image: url("/src/shared/assets/background/poizon.png");
+  background-color: #000;
   color: white;
   padding-bottom: 7rem;
 
@@ -8,6 +8,7 @@
     max-width: 1860px;
     margin: 0 auto;
     padding: 0 60px;
+
     @include flex-wrap-center;
 
     .title {
@@ -16,14 +17,14 @@
       text-align: center;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       .title {
-        padding-top: 0px;
+        padding-top: 0;
         font-size: var(--font-size-400);
       }
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (width <= 360px) {
       .title {
         padding-top: 20px;
         font-size: var(--font-size-250);
@@ -34,17 +35,17 @@
       text-align: center;
       color: var(--color-green);
       font-size: 23px;
-      padding: 10px 0px 15px 0px;
+      padding: 10px 0 15px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (width <= 768px) {
       .explanation {
         padding-top: 7px;
         font-size: var(--font-size-150);
       }
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (width <= 360px) {
       .explanation {
         padding-bottom: 10px;
         font-size: var(--font-size-50);
@@ -53,19 +54,21 @@
 
     .block {
       @include flex-wrap;
+
       justify-content: space-around;
 
       .box {
         @include flex-column-center-wrap;
+
         max-width: 500px;
 
         .paragraph {
           text-align: justify;
           font-size: var(--font-size-225);
-          padding: 15px 15px 15px 15px;
+          padding: 15px;
         }
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (width <= 1024px) {
           .paragraph {
             max-width: 700px;
             padding-top: 13px;
@@ -73,57 +76,57 @@
           }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (width <= 768px) {
           .paragraph {
             font-size: var(--font-size-150);
           }
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (width <= 360px) {
           .paragraph {
             font-size: var(--font-size-50);
-            padding: 10px 10px 10px 10px;
+            padding: 10px;
           }
         }
       }
 
-      @media screen and (max-width: 1395px) {
+      @media screen and (width <= 1395px) {
         .box {
           max-width: 700px;
-          padding: 0px;
+          padding: 0;
           margin: 0 auto;
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (width <= 768px) {
         .box {
-          padding-left: 0px;
+          padding-left: 0;
           max-width: 700px;
         }
       }
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
     .blocks {
       padding-top: 3.25em;
     }
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (width <= 360px) {
     .blocks {
       padding-top: 0;
     }
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .service {
     padding-bottom: 5rem;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (width <= 360px) {
   .service {
     padding-bottom: 1rem;
   }
